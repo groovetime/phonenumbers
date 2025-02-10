@@ -83,7 +83,7 @@ final List<Country> countries = <Country>[
   Country('French Polynesia', 'PF', 689, LengthRule.exact(6)),
   Country('Gabon', 'GA', 241, LengthRule.oneOf([6, 7])),
   Country('Gambia', 'GM', 220, LengthRule.exact(7)),
-  Country('Georgia', 'GE', 995, LengthRule.exact(8)),
+  Country('Georgia', 'GE', 995, LengthRule.exact(9)),
   Country('Germany', 'DE', 49, LengthRule.range(6, 13)),
   Country('Ghana', 'GH', 233, LengthRule.range(5, 9)),
   Country('Gibraltar', 'GI', 350, LengthRule.exact(8)),
