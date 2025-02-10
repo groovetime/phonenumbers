@@ -70,7 +70,6 @@ class _PhoneNumberFieldState extends State<PhoneNumberField> {
   bool _countryCodeFocused = false;
   PhoneNumberEditingController? _controller;
   final TextStyle _hiddenText = TextStyle(
-    color: Colors.transparent,
     height: 0,
     fontSize: 0,
   );
