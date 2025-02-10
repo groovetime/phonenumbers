@@ -1,7 +1,7 @@
 name: phonenumbers
 description: Phone number validation and input widget written in pure dart without any native dependency
 version: 1.1.1
-homepage: https://github.com/fonibo/phonenumbers
+homepage: https://github.com/groovetime/phonenumbers
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  phonenumbers_core: ^1.0.1
+  phonenumbers_core:
+    path: ../core/
 
 dev_dependencies:
   flutter_test:
