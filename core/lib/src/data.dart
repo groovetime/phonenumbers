@@ -38,7 +38,7 @@ final List<Country> countries = <Country>[
   Country('Burkina Faso', 'BF', 226, LengthRule.exact(8)),
   Country('Burundi', 'BI', 257, LengthRule.exact(8)),
   Country('Cambodia', 'KH', 855, LengthRule.exact(8)),
-  Country('Cameroon', 'CM', 237, LengthRule.exact(8)),
+  Country('Cameroon', 'CM', 237, LengthRule.exact(9)),
   Country('Canada', 'CA', 1, LengthRule.exact(10)),
   Country('Cape Verde', 'CV', 238, LengthRule.exact(7)),
   Country('Cayman Islands', 'KY', 1345, LengthRule.exact(7)),
