@@ -130,7 +130,6 @@ class _PhoneNumberFieldState extends State<PhoneNumberField> {
         children: <Widget>[
           Container(
             width: widget.countryCodeWidth,
-            margin: const EdgeInsets.only(right: 15),
             child: GestureDetector(
               onTap: onChangeCountry,
               child: ValueListenableBuilder<Country?>(
@@ -140,6 +139,12 @@ class _PhoneNumberFieldState extends State<PhoneNumberField> {
                   textAlignVertical: TextAlignVertical.center,
                   isFocused: _countryCodeFocused,
                   decoration: widget.decoration.copyWith(
+                    border: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    errorBorder: InputBorder.none,
+                    disabledBorder: InputBorder.none,
+                    fillColor: Colors.transparent,
                     hintText: '',
                     errorStyle: _hiddenText,
                     helperStyle: _hiddenText,
@@ -168,6 +173,12 @@ class _PhoneNumberFieldState extends State<PhoneNumberField> {
                 controller: _effectiveController!.nationalNumberController,
                 style: textStyle,
                 decoration: widget.decoration.copyWith(
+                  border: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  enabledBorder: InputBorder.none,
+                  errorBorder: InputBorder.none,
+                  disabledBorder: InputBorder.none,
+                  fillColor: Colors.transparent,
                   labelStyle: _hiddenText,
                   errorStyle: _hiddenText,
                   helperStyle: _hiddenText,
@@ -176,6 +187,14 @@ class _PhoneNumberFieldState extends State<PhoneNumberField> {
                 keyboardType: TextInputType.number,
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                 maxLength: value?.length.maxLength ?? 15,
+                buildCounter: (
+                    BuildContext context, {
+                      required int currentLength,
+                      required bool isFocused,
+                      required int? maxLength,
+                    }) {
+                  return null;
+                },
               ),
             ),
           ),
